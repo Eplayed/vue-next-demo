@@ -73,11 +73,11 @@ module.exports = {
     //     deleteOriginalAssets: true
     //   })
     // ]
-  },
-  chainWebpack(config) {
-    config.plugin("html").tap(args => {
-      args[0].title = name;
-      return args;
-    });
   }
+  // chainWebpack(config) {
+  //   config.plugin("html").tap(args => {
+  //     args[0].title = name;
+  //     return args;
+  //   });
+  // }
 };
