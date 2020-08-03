@@ -23,7 +23,7 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     port: port,
-    open: true
+    open: true,
   },
   // proxy: {
   //   '/dev-api': {
@@ -47,12 +47,12 @@ module.exports = {
     // name: name,
     resolve: {
       alias: {
-        "@": resolve("src")
-      }
+        "@": resolve("src"),
+      },
     },
     performance: {
-      hints: false
-    }
+      hints: false,
+    },
     // plugin: [
     //   new CompressionPlugin({
     //     /* [file]被替换为原始资产文件名。
@@ -73,7 +73,7 @@ module.exports = {
     //     deleteOriginalAssets: true
     //   })
     // ]
-  }
+  },
   // chainWebpack(config) {
   //   config.plugin("html").tap(args => {
   //     args[0].title = name;
